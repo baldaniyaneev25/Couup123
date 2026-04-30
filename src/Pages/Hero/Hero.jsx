@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import whatsapp from "../../assets/whatsapp.png";
-import arrow from "../../assets/arrow.png";
+
 
 
 function Home() {
@@ -29,7 +29,8 @@ function Home() {
       <div className="hero-buttons">
 
         <button className="secondary-btn">
-          Let's chat   <img src={arrow} alt="Arrow" className="btn-icon-arrow" /></button>
+          Let's chat
+        </button>
       </div>
 
       {/* Logos */}
