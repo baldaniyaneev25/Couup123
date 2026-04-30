@@ -1,0 +1,160 @@
+/* SECTION */
+.marquee-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+/* TEXT */
+.top-text {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 10px;
+}
+
+.badge {
+  display: inline-block;
+  background: #f1f5f9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.top-text h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+/* SLIDER */
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+/* TRACK */
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+/* DIRECTION */
+.marquee-left {
+  animation: marqueeLeft 40s linear infinite;
+}
+
+.marquee-right {
+  animation: marqueeRight 40s linear infinite;
+}
+
+/* ITEM */
+.marquee-item {
+  margin: 0 15px;
+  padding: 10px 18px;
+  background: #f1f5f9;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+/* Hover */
+.marquee-item:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+/* FADE EFFECT */
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
+
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+/* ANIMATION */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .top-text h2 {
+    font-size: 36px;
+  }
+
+  .marquee-item {
+    font-size: 15px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .marquee-section {
+    padding: 60px 15px;
+  }
+
+  .top-text h2 {
+    font-size: 26px;
+  }
+
+  .marquee-item {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .marquee-container::before,
+  .marquee-container::after {
+    width: 40px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .top-text h2 {
+    font-size: 22px;
+  }
+
+  .badge {
+    font-size: 12px;
+  }
+
+  .marquee-item {
+    font-size: 13px;
+  }
+}

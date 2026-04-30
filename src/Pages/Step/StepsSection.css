@@ -1,0 +1,166 @@
+/* SECTION */
+.steps {
+  padding: 100px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+/* Badge */
+.steps-badge {
+  display: inline-block;
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.steps-title {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+/* Wrapper */
+.steps-wrapper {
+  position: relative;
+}
+
+/* Cards */
+.steps-container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.step-card {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Text */
+.step-card h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.step-card p {
+  margin-top: 20px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Step number */
+.step-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Tilt */
+.tilt-left {
+  transform: rotate(-2deg);
+}
+
+.tilt-right {
+  transform: rotate(2deg);
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  width: 140px;
+  opacity: 0.9;
+}
+
+/* Top arrow */
+.arrow-top {
+  top: -60px;
+  left: 30%;
+  transform: rotate(10deg);
+}
+
+/* Bottom arrow */
+.arrow-bottom {
+  bottom: -60px;
+  right: 30%;
+  transform: rotate(-10deg);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .steps-title {
+    font-size: 36px;
+  }
+
+  .step-card {
+    width: 280px;
+  }
+
+  .arrow {
+    width: 110px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .steps {
+    padding: 70px 15px;
+  }
+
+  .steps-title {
+    font-size: 26px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .step-card {
+    width: 100%;
+    max-width: 380px;
+    transform: none !important;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .steps-title {
+    font-size: 22px;
+  }
+
+  .step-card {
+    padding: 20px;
+  }
+
+  .step-card h3 {
+    font-size: 18px;
+  }
+
+  .step-card p {
+    font-size: 14px;
+  }
+}

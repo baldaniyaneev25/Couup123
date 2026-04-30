@@ -1,0 +1,52 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    background: #ffffff;
+}
+
+/* Moving row */
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+/* Each card */
+.slide {
+    min-width: 200px;
+    height: 120px;
+    margin: 0 20px;
+    background: #f1f5f9;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.1s;
+}
+
+/* Image */
+.slider-track img {
+    width: 550px;
+    margin: 0 20px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+/* Hover effect */
+.slide:hover {
+    transform: scale(0.03   );
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
