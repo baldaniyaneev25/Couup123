@@ -32,10 +32,11 @@
 
 /* Title */
 .hero-title {
+  margin-top: 20px;
   font-size: 60px;
   font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.07;
+  letter-spacing: -0.05em;
   color: #000000;
   margin-bottom: 20px;
 }
@@ -43,6 +44,8 @@
 /* Subtitle */
 .hero-subtitle {
   font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   color: #555;
   max-width: 600px;
   margin-bottom: 30px;
@@ -86,6 +89,12 @@
   border-radius: 25px;
   font-weight: 500;
   cursor: pointer;
+  
+}
+
+.secondary-btn a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .secondary-btn:hover {

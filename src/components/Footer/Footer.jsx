@@ -10,9 +10,9 @@ function Footer() {
 
                 {/* Left */}
                 <div className="footer-left">
-                    <p>Email:coupeasy@email.com</p>
-                    <p>Based in: Ahmedabad,India</p>
-                    <p>Available for: Freelance & Full-Time</p>
+                    <p>Email :  coupeasy@email.com</p>
+                    <p>Based in : Ahmedabad,India</p>
+                    <p>Available for : new opportunities</p>
                 </div>
 
                 {/* Right */}
@@ -31,7 +31,7 @@ function Footer() {
                         <h4>Socials</h4>
                         <a href="https://www.instagram.com/couup.in/" target="_blank" rel="noopener noreferrer">Instagram</a>
                        
-                        <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/couupwebstdio/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
 
                 </div>

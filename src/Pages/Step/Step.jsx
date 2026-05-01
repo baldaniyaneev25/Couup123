@@ -3,7 +3,7 @@ import "./StepsSection.css";
 
 function StepsSection() {
     return (
-        <section className="steps">
+        <section className="steps"  id="how-we-work">
 
             <div className="steps-badge">How it works</div>
 

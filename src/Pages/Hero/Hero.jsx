@@ -11,7 +11,7 @@ function Home() {
       {/* Badge */}
       <div className="hero-badge">
         <span className="dot"></span>
-        Visual & Product Designer · Available for projects
+       Design & Development Studio · Available for projects
       </div>
 
       {/* Heading */}
@@ -29,7 +29,9 @@ function Home() {
       <div className="hero-buttons">
 
         <button className="secondary-btn">
+          <a href="#contact">
           Let's chat
+          </a>
         </button>
       </div>
 

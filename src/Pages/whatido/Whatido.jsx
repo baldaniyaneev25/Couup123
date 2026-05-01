@@ -21,7 +21,7 @@ const row2 = [
 
 function MarqueeSection() {
   return (
-    <section className="marquee-section">
+    <section className="marquee-section" id="what-we-do">
 
       {/* TEXT */}
       <div className="top-text">

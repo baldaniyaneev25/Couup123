@@ -21,6 +21,10 @@ function Navbar() {
       {/* Right Side */}
       <div className={`nav-right ${menuOpen ? "active" : ""}`}>
         <a href="#projects">Projects</a>
+                <a href="#what-we-do">What We Do</a>
+        <a href="#how-we-work">How We Work</a>
+
+
 
         <button className="chat-btn">
           <a href="#contact">Let's chat</a>
