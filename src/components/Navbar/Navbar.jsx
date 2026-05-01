@@ -9,7 +9,9 @@ function Navbar() {
       {/* Left Side */}
       <div className="nav-left">
         <div className="nav-text">
-          <h4 className="logo">Couup Web Stdio</h4>
+          <h4 className="logo" href="/">
+            Couup Web Stdio
+          </h4>
         </div>
       </div>
 

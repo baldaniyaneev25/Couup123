@@ -1,5 +1,9 @@
 /* Navbar Container */
 .navbar {
+    position: sticky;
+  top: 0; 
+    background: black;
+      z-index: 1000;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
@@ -17,9 +21,11 @@
 }
 
 .nav-text h4 {
+  
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* Right Section */
