@@ -2,15 +2,13 @@ import React from "react";
 import "./Slider.css";
 
 // Import images
-import img1 from "../../assets/1st.jpg";
-import img2 from "../../assets/2nd.jpg";
-import img3 from "../../assets/3rd.jpg";
-import img4 from "../../assets/4th.jpg";
+import img1 from "../../assets/coup-travel1.png";
+import img2 from "../../assets/couupecom1.png";
 
 
 
 
-const items = [img1, img2, img3, img4];
+const items = [img1, img2];
 
 function Slider() {
     return (
